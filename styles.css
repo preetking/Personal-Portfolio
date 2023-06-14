@@ -4,21 +4,27 @@
     font-family:'Roboto', sans-serif;
 }
 
-.container{
-    width: 100%;
-    height: 100vh;
+
+body{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+   
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
     padding-left: 8%;
     padding-right: 8%;
-    box-sizing: border-box;
+
 }
 .navbar{
     height: 12%;
     display: flex;
     align-items: center;
+    position: sticky;
 }
 .logo{
     width: 50px;
@@ -79,16 +85,20 @@ a{
 h1{
     color:white;
     font-size:100px;
-     text-shadow: -2px -2px 0 black, 
+    text-shadow: 2px 2px 5px black, 
 
 }
 
-p{
+.col p{
     color: white;
     font-size: 11px;
     line-height: 15px;
 }
 
+.col2 p{
+    color: black;
+    font-size: 14px;
+}
 button{
     width: 180px;
     color: #000;
@@ -113,7 +123,7 @@ button:hover{
     display: inline-block;
     border-radius: 30px;
     padding: 15px 25px;
-    box-sizing: border-box;
+    box-sizing:content-box;
     cursor: pointer;
     margin: 10px; 
     background-image: url(images/background.jpg);
@@ -123,16 +133,17 @@ button:hover{
 }
 
 .card2{
-    background-image: url(images/socials.jpg);    
+    background-image: url(images/Projects.jpg);   
 }
 
 .card3{
-    background-image: url(images/Projects.jpg);
+    background-image: url(images/resume.jpg);
+    background-position-x: right;
 }
 
 .card4{
-    background-image: url(images/resume.jpg);
-    background-position-x: right;
+    background-image: url(images/socials.jpg);
+    
 }
 
 .card:hover{
@@ -142,8 +153,18 @@ button:hover{
 }
 
 h5{
-    font-size: 22px;
+    font-size: 25px;
+    font-family: 'Overpass', sans-serif;
     color: #000;
-    text-shadow: 0px 0px 5px #fff, 0px 2px 6px #000;
+    text-shadow: 2px 0px 6px #fff, -2px 0px 6px #fff, 2px 2px 6px #000;
 }
 
+.about-me{
+    margin-top: 250px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.about-me p{
+    font-size: 15px;
+}
